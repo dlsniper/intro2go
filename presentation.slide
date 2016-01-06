@@ -1,0 +1,143 @@
+Introduction to Go
+A short introduction into a small yet powerful language
+5 Apr 2016
+
+Florin Patan
+Cloud Services Engineer
+florinpatan@gmail.com
+http://github.com/dlsniper
+@dlsniper
+
+* Who am I?
+
+My name is Florin
+
+Discovered Go about 3 years ago
+
+Contributor to the Go plugin for IntelliJ IDEA and other open-source projects
+
+Former co-organizer of Go and AWS meetups in Berlin
+
+Cloud Services Engineer at YouView TV Ltd.
+
+I review books and video tutorial series in my spare time
+
+
+* Agenda
+
+- Short introduction in Go
+
+- Examples of Go in action
+
+
+Q & A can be addressed during the presentation or at the end.
+
+* Short history of Go
+
+Initially it was developed internally at Google from ~2007
+
+Authors Ken Thompson, Rob Pike and Robert Griesemer
+
+Open source since 2009
+
+Stable release 1.0 since 2012
+
+* Go compatibility promise
+
+Guarantees backwards compatibility: any program that runs on Go 1.0 can be compiled and runs in Go 1.x
+
+* Hello YouView
+
+.play hello.go
+
+* Go types
+
+.play gotypes.go
+
+* Go assignment
+
+.play assignments.go
+
+* Go and concurrency
+
+Concurrency is enabled via two powerful concepts:
+
+- goroutines
+- channels
+
+* Goroutines
+
+In order to create a goroutine you have to do the following:
+
+    go function
+
+Example:
+
+.play goroutines.go  /^func main/,/^}/
+
+* Channels
+
+In order to create a channel you have to do the following:
+
+    result := make(chan float64)
+
+Example:
+
+.play channels.go /^func powersOf/,/^}/
+
+* Channels advanced
+
+.play advchannels.go  /^	var timeout/,/	os.Exit/
+
+* Dir size example
+
+See everything in action
+
+.play du.go /^func walkDir/,/^}/
+
+* Tools around the Go ecosystem
+
+Standard tools:
+
+- gofmt: consistent go formatting
+- go test: testing and benchmarking the go code
+- go tool pprof: profiling your go code
+
+Third-party tools:
+
+- delve: debugger (still beta)
+- a number of third-party packages, usually
+
+* Editors
+
+.link https://plugins.jetbrains.com/plugin/?idea&id=5047 Plugin for IntelliJ based IDEs
+.link https://github.com/DisposaBoy/GoSublime Sublime plugin
+.link https://atom.io/packages/go-plus Atom plugin
+.link https://github.com/microsoft/vscode-go VS Code plugin
+.link https://github.com/fatih/vim-go Vim plugin
+.link https://github.com/dominikh/go-mode.el Emacs plugin
+
+* Resources
+
+.link https://golang.org/ The Go website https://golang.org/
+
+.link https://tour.golang.org/ The Go Tour https://tour.golang.org/
+
+.link https://www.youtube.com/watch?v=QDDwwePbDtw Google I/O 2013 - Advanced Go Concurrency Patterns
+
+.link https://blog.golang.org/pipelines Go Concurrency Patterns: Pipelines and cancellation
+
+.link https://blog.golang.org/context Go Concurrency Patterns: Context
+
+.link https://groups.google.com/forum/#!forum/golang-nuts Go mailing list
+
+.link https://forum.golangbridge.org Go forum
+
+.link https://gophervids.appspot.com Go videos
+
+Books:
+
+.link http://www.gopl.io/ The Go Programming Language
+.link http://goinactionbook.com/ Go In Action
+
+* Questions?
